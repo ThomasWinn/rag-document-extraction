@@ -529,6 +529,7 @@ def main() -> None:
         chunk_size=512,
         chunk_overlap=40,
         data_path=root / "data",  # or root / "src" / "data" if that’s where PDFs live
+        embedding_model_name="bge-large-en-v1.5"
     )
     pdfs = pipeline.convert_pdf_documents()
 
@@ -543,6 +544,17 @@ def main() -> None:
     #         print(f"  Content: {doc_chunk.content[:100]}...")
     #         print(f"  Metadata: {doc_chunk.metadata}")
 
+    chunks_with_embeddings = pipeline.embed_chunks(
+        chunk_map=chunks,
+        batch_size=16,
+        normalize=True,
+        show_progress_bar=True,
+    )
+
+    for chunk in chunks_with_embeddings:
+        print(f"Document ID: {chunk}")
+        for doc_chunk in chunks_with_embeddings[chunk]:
+            print(f"  Embeddings: {doc_chunk.embeddings}")
 
 if __name__ == "__main__":
     main()
