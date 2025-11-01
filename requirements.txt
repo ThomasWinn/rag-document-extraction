@@ -1,3 +1,4 @@
 docling
 chromadb
 duckdb
+sentence-transformers
