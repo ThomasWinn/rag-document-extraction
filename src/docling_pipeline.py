@@ -26,6 +26,7 @@ from docling_core.types.doc.document import (
 )
 from langchain_core.documents import Document as LCDocument
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from sentence_transformers import SentenceTransformer
 
 
 logger = logging.getLogger(__name__)
@@ -37,6 +38,7 @@ class DocumentChunk:
     chunk_id: str
     content: str
     metadata: Dict[str, Any] = field(default_factory=dict)
+    embedding: Optional[List[float]] = None
 
 
 class DoclingIngestionPipeline:
@@ -50,13 +52,22 @@ class DoclingIngestionPipeline:
         chunk_size: int,
         chunk_overlap: int,
         data_path: Path,
+        embedding_model_name: str,
         cache_dir: Optional[Path] = None,
         use_cache: bool = True,
+        embedding_device: Optional[str] = "mps",
     ) -> None:
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
         self.data_path = Path(data_path)
         self.use_cache = use_cache
+        self.embedding_model_name = embedding_model_name
+        self.embedding_device = embedding_device
+        self.embedder: SentenceTransformer = SentenceTransformer(
+            embedding_model_name,
+            device=self.embedding_device,
+            trust_remote_code=True,
+        )
 
         if not self.data_path.exists():
             raise FileNotFoundError(
@@ -106,6 +117,7 @@ class DoclingIngestionPipeline:
                 cached_doc = self._load_cached_document(pdf_path)
                 if cached_doc is not None:
                     documents[pdf_path.name] = cached_doc
+                    print("  Loaded from cache.")
                     continue
 
             try:
@@ -181,26 +193,24 @@ class DoclingIngestionPipeline:
 
     def build_hierarchical_chunks(
         self,
-        documents: Optional[Dict[str, Any]] = None,
+        doc_map: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, List[DocumentChunk]]:
         """
         Convert PDF documents (if not provided) and generate LangChain-ready chunks.
 
-        If `documents` is supplied, it should map filenames to `DoclingDocument`
+        If `doc_map` is supplied, it should map filenames to `DoclingDocument`
         instances (or full `ConversionResult` objects). The chunks retain section
         hierarchy metadata such as section title, path, and page numbers to support
         structured retrieval workflows.
         """
 
-        doc_map = documents or self.convert_pdf_documents()
+        if doc_map is None:
+            doc_map = self.convert_pdf_documents()
+
         chunk_map: Dict[str, List[DocumentChunk]] = {}
 
-        for filename, value in doc_map.items():
-            doc = value.document if hasattr(value, "document") else value
-            if not isinstance(doc, DoclingDocument):
-                logger.warning("Unsupported document payload for %s; skipping", filename)
-                continue
-
+        # pdf path : DoclingDocument
+        for filename, doc in doc_map.items():
             doc_id = Path(filename).stem
             sections = self._build_sections(doc, doc_id)
 
@@ -231,12 +241,17 @@ class DoclingIngestionPipeline:
                     "contains_list": section["has_lists"],
                 }
 
+
+                # Put into a LangChain Document for splitting
                 document = self.document_class(
                     page_content=content,
                     metadata=metadata,
                 )
+
+                # Split those LangChain Documents into chunks based on text splitter parameters
                 split_docs = self.text_splitter.split_documents([document])
 
+                # Process each split document
                 for split_doc in split_docs:
                     chunk_text = split_doc.page_content.strip()
                     if not chunk_text:
@@ -283,6 +298,35 @@ class DoclingIngestionPipeline:
 
         return chunk_map
 
+    def embed_chunks(
+        self,
+        chunk_map: Optional[Dict[str, List[DocumentChunk]]] = None,
+        batch_size: int = 16,
+        normalize: bool = True,
+        show_progress_bar: bool = False,
+    ) -> Dict[str, List[DocumentChunk]]:
+        """
+        Generate embeddings for every chunk using a SentenceTransformer model.
+
+        Returns the same mapping but with each `DocumentChunk.embedding` populated.
+        """
+        for doc_id, chunks in chunk_map.items():
+            if not chunks:
+                continue
+
+            texts = [chunk.content for chunk in chunks]
+            embeddings = self.embedder.encode(
+                texts,
+                batch_size=batch_size,
+                normalize_embeddings=normalize,
+                show_progress_bar=show_progress_bar,
+            )
+
+            for chunk, vector in zip(chunks, embeddings):
+                chunk.embedding = vector.tolist() if hasattr(vector, "tolist") else list(vector)
+
+        return chunk_map
+
     # ------------------------------------------------------------------ Helpers
     def _build_sections(
         self,
@@ -292,6 +336,14 @@ class DoclingIngestionPipeline:
         """
         Traverse the Docling document and build hierarchical sections with
         aggregated text suitable for downstream chunking.
+
+        Depending on what docling tags different things...
+        TitleItem: Add # heading at level 1
+        SectionHeaderItem: Add heading (## , ###, etc. ) at specified level
+        Paragraphs (TextItem): Add as text under current section
+        ListItem: Add as bulleted list under current section (- item)
+        Tables (TableItem): Convert to markdown table under current section
+        Other items: Ignore but track page numbers
         """
 
         root_title = doc.name or doc_id
@@ -360,6 +412,7 @@ class DoclingIngestionPipeline:
                     target_section["has_lists"] = True
                 continue
 
+            # Process Tables by converting it as a markdown.
             if isinstance(item, TableItem):
                 table_markdown = self._table_to_markdown(item, doc)
                 if table_markdown:
@@ -467,29 +520,29 @@ class DoclingIngestionPipeline:
                 captions.append(text.strip())
         return " ".join(captions).strip()
 
-
 def main() -> None:
     """
     Update the variables below to configure ingestion without touching pipeline internals.
     """
-
-    # ------------------------------------------------------------------ Config
-    input_path = Path("data")
-    chunk_size = 512
-    chunk_overlap = 40
-
-    # ------------------------------------------------------------------ Run
+    root = Path(__file__).resolve().parent  # project root
     pipeline = DoclingIngestionPipeline(
-        chunk_size,
-        chunk_overlap,
-        data_path=input_path,
+        chunk_size=512,
+        chunk_overlap=40,
+        data_path=root / "data",  # or root / "src" / "data" if that’s where PDFs live
     )
     pdfs = pipeline.convert_pdf_documents()
-    chunks = pipeline.build_hierarchical_chunks(documents=pdfs)
 
-    # Process chunks as needed
-    for chunk in chunks:
-        print(chunk)
+    # Hierarchical Chunking with Document Metadata
+    chunks = pipeline.build_hierarchical_chunks(doc_map=pdfs)
+
+    # # Process chunks as needed
+    # for chunk in chunks:
+    #     print(f"Document ID: {chunk}")
+    #     for doc_chunk in chunks[chunk]:
+    #         print(f"  Chunk ID: {doc_chunk.chunk_id}")
+    #         print(f"  Content: {doc_chunk.content[:100]}...")
+    #         print(f"  Metadata: {doc_chunk.metadata}")
+
 
 if __name__ == "__main__":
     main()
