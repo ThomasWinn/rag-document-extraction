@@ -1,0 +1,3 @@
+docling
+chromadb
+duckdb
