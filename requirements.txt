@@ -2,3 +2,6 @@ docling
 chromadb
 duckdb
 sentence-transformers
+langchain
+langchain-text-splitters
+tiktoken
