@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import logging
 import json
+import copy
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
@@ -543,6 +544,74 @@ class DoclingIngestionPipeline:
             reranker_scores,
         )
 
+    def retrieve_top_chunks(
+        self,
+        query: str,
+        collection_name: str,
+        persist_directory: Path,
+        top_k: int = 5,
+        doc_id: Optional[str] = None,
+    ) -> List[Dict[str, Any]]:
+        """Retrieve and rerank chunks for a single query."""
+
+        raw_results = self.query_collection(
+            query_texts=[query],
+            collection_name=collection_name,
+            persist_directory=persist_directory,
+            top_k=top_k,
+            doc_id=doc_id,
+        )
+
+        ids = raw_results.get("ids", [[]])[0]
+        documents = raw_results.get("documents", [[]])[0]
+        metadatas = raw_results.get("metadatas", [[]])[0]
+        distances = raw_results.get("distances", [[]])[0]
+
+        if not ids:
+            return []
+
+        (
+            reranked_ids,
+            reranked_docs,
+            reranked_metadatas,
+            reranked_distances,
+            reranker_scores,
+        ) = self.rerank_query_results(
+            query=query,
+            ids=ids,
+            documents=documents,
+            metadatas=metadatas,
+            distances=distances,
+            top_k=top_k,
+        )
+
+        results: List[Dict[str, Any]] = []
+        for rank, (chunk_id, doc, metadata) in enumerate(
+            zip(reranked_ids, reranked_docs, reranked_metadatas),
+            start=1,
+        ):
+            distance = (
+                reranked_distances[rank - 1]
+                if reranked_distances and len(reranked_distances) >= rank
+                else None
+            )
+            score = (
+                reranker_scores[rank - 1]
+                if reranker_scores and len(reranker_scores) >= rank
+                else None
+            )
+            results.append(
+                {
+                    "rank": rank,
+                    "chunk_id": chunk_id,
+                    "text": doc,
+                    "metadata": dict(metadata) if isinstance(metadata, dict) else metadata,
+                    "distance": distance,
+                    "reranker_score": score,
+                }
+            )
+        return results
+
     def run_query_loop(
         self,
         collection_name: str,
@@ -550,7 +619,7 @@ class DoclingIngestionPipeline:
         top_k: int = 5,
         doc_id: Optional[str] = None,
         initial_query: Optional[str] = None,
-    ) -> None:
+    ) -> List[Dict[str, Any]]:
         """Simple REPL to issue similarity queries against the collection.
 
         Args:
@@ -565,64 +634,43 @@ class DoclingIngestionPipeline:
         print("Commands: :doc <doc_id> to filter, :clear to remove filter.")
         active_doc_id = doc_id
 
-        def _execute(query: str) -> None:
-            results = self.query_collection(
-                query_texts=[query],
+        last_results: List[Dict[str, Any]] = []
+
+        def _execute(query: str) -> List[Dict[str, Any]]:
+            reranked = self.retrieve_top_chunks(
+                query=query,
                 collection_name=collection_name,
                 persist_directory=persist_directory,
                 top_k=top_k,
                 doc_id=active_doc_id,
             )
 
-            ids = results.get("ids", [[]])[0]
-            documents = results.get("documents", [[]])[0]
-            metadatas = results.get("metadatas", [[]])[0]
-            distances = results.get("distances", [[]])[0]
-
-            if not ids:
+            if not reranked:
                 print("No matches found.")
-                return
+                return []
 
-            (
-                reranked_ids,
-                reranked_docs,
-                reranked_metadatas,
-                reranked_distances,
-                reranker_scores,
-            ) = self.rerank_query_results(
-                query=query,
-                ids=ids,
-                documents=documents,
-                metadatas=metadatas,
-                distances=distances,
-                top_k=top_k,
-            )
-
-            print(f"\nTop {len(reranked_ids)} results:")
-            for rank, (chunk_id, distance, doc, metadata, score) in enumerate(
-                zip(
-                    reranked_ids,
-                    reranked_distances,
-                    reranked_docs,
-                    reranked_metadatas,
-                    reranker_scores or [None] * len(reranked_ids),
-                ),
-                start=1,
-            ):
-                doc_preview = (doc[:200] + "...") if len(doc) > 200 else doc
+            print(f"\nTop {len(reranked)} results:")
+            for item in reranked:
+                doc_preview = (item["text"][:200] + "...") if len(item["text"]) > 200 else item["text"]
+                metadata = item.get("metadata") or {}
                 section_path = metadata.get("section_path_str")
+                page_numbers = metadata.get("page_numbers") or []
+                pages_str = ", ".join(str(page) for page in page_numbers) if page_numbers else "n/a"
+                distance = item.get("distance")
+                score = item.get("reranker_score")
                 distance_str = f" distance={distance:.4f}" if isinstance(distance, (int, float)) else ""
-                score_str = (
-                    f" score={score:.4f}" if isinstance(score, (int, float)) else ""
-                )
+                score_str = f" score={score:.4f}" if isinstance(score, (int, float)) else ""
                 print(
-                    f"[{rank}] chunk={chunk_id}{distance_str}{score_str}"
+                    f"[{item['rank']}] chunk={item['chunk_id']}{distance_str}{score_str}"
                     f"\n    section={section_path}"
+                    f"\n    pages={pages_str}"
                     f"\n    text={doc_preview}\n"
                 )
 
+            return reranked
+
         if initial_query:
-            _execute(initial_query)
+            last_results = _execute(initial_query)
 
         while True:
             try:
@@ -649,7 +697,9 @@ class DoclingIngestionPipeline:
                 print("Cleared doc_id filter.")
                 continue
 
-            _execute(query)
+            last_results = _execute(query)
+
+        return last_results
 
     @staticmethod
     def _sanitize_metadata(metadata: Dict[str, Any]) -> Dict[str, Any]:
@@ -858,12 +908,11 @@ class DoclingIngestionPipeline:
                 captions.append(text.strip())
         return " ".join(captions).strip()
 
-def main() -> None:
+def main() -> Dict[str, Any]:
     """
     Update the variables below to configure ingestion without touching pipeline internals.
     """
-    doc_id = "BrokerComparison"
-    initial_question = "What is the definition of earnings for MARKET OPTION 1?"
+    doc_id = "RFP-CityOfBellaire"
     collection_name = "hierarchical_chunking"  # Name of the ChromaDB collection
     root = Path(__file__).resolve().parent  # project root
     pipeline = DoclingIngestionPipeline(
@@ -927,20 +976,67 @@ def main() -> None:
         "evidence": ""
     }
 
-    # We want to Q&A on one document only , so pass in doc_id
-    pipeline.run_query_loop(
-        collection_name=collection_name,
-        persist_directory=root / "chroma_db",
-        top_k=5,
-        doc_id=doc_id,  # or None to search all documents
-        initial_query=initial_question,
-    )
-
-    # Select top N chunks from the results and use them as context for LLM generation.
-    # This is where you would implement the logic to extract the top N chunks
-    # based on the reranker scores and use them as context for your LLM.
+    persist_directory = root / "chroma_db"
+    top_k = 5
     top_n = 3  # Number of top chunks to use
 
+    template_path = root / "prompts" / f"{product_type_name}.txt"
+    template_text = template_path.read_text(encoding="utf-8")
+
+    for idx, attribute in enumerate(attributes_list):
+
+        """
+        We could use RAG to give us specific sections to answer certain attributes.
+        i.e.
+        - Broker Commission = commission section
+        else:
+            - Give us full product's sections
+        """
+        attribute_query = f"Find me the {attribute} for {full_product_name}."
+
+        reranked_results = pipeline.retrieve_top_chunks(
+            query=attribute_query,
+            collection_name=collection_name,
+            persist_directory=persist_directory,
+            top_k=top_k,
+            doc_id=doc_id,
+        )
+
+        top_chunks = reranked_results[:top_n]
+
+        context_parts: List[str] = []
+        for item in top_chunks:
+            metadata = item.get("metadata") or {}
+            page_numbers = metadata.get("page_numbers") or []
+            page_str = ", ".join(str(page) for page in page_numbers) if page_numbers else "n/a"
+            context_parts.append(
+                f"### Rank {item['rank']} | Pages: {page_str}\n{item['text']}"
+            )
+        context_text = "\n\n".join(context_parts) if context_parts else "No relevant chunks retrieved."
+
+        attribute_json = copy.deepcopy(inforce_json)
+        attribute_json["attribute_name"] = attribute
+
+        json_template_str = json.dumps(attribute_json, indent=4)
+        prompt_text = (
+            template_text
+            .replace("{{context}}", context_text)
+            .replace("{{json_template}}", json_template_str)
+        )
+
+        output[attribute] = {
+            "attribute_index": idx,
+            "query": attribute_query,
+            "retrieved_chunks": reranked_results,
+            "top_chunks": top_chunks,
+            "context": context_text,
+            "json_template": attribute_json,
+            "prompt": prompt_text,
+            "model_response": None,  # placeholder for future LLM call
+        }
+
+    return output
 
 if __name__ == "__main__":
-    main()
+    results = main()
+    print(f"Prepared prompts for {len(results)} attributes.")
