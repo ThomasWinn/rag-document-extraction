@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 **/.docling_cache/
+bge-large-en-v1.5/
+bge-reranker-base/
 
 # C extensions
 *.so
