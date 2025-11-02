@@ -72,7 +72,7 @@ class DoclingIngestionPipeline:
             device=self.embedding_device,
             trust_remote_code=True,
         )
-        self._reranker: Optional[CrossEncoder] = None
+        self._reranker: Optional[CrossEncoder] = None # (query , chunk) -> score
 
         if not self.data_path.exists():
             raise FileNotFoundError(
@@ -871,21 +871,17 @@ def main() -> None:
         chunk_overlap=40,
         data_path=root / "data",  # or root / "src" / "data" if that’s where PDFs live
         embedding_model_name="BAAI/bge-large-en-v1.5",
-        reranker_model_name="BAAI/bge-reranker-base"
+        reranker_model_name="BAAI/bge-reranker-base" # None if no reranking desired
     )
+
+    # # Step 1: Convert PDFs to DoclingDocuments
     # pdfs = pipeline.convert_pdf_documents()
 
+    # Step 2: Build hierarchical chunks from DoclingDocuments
     # # Hierarchical Chunking with Document Metadata
     # chunks = pipeline.build_hierarchical_chunks(doc_map=pdfs)
 
-    # # Process chunks as needed
-    # for chunk in chunks:
-    #     print(f"Document ID: {chunk}")
-    #     for doc_chunk in chunks[chunk]:
-    #         print(f"  Chunk ID: {doc_chunk.chunk_id}")
-    #         print(f"  Content: {doc_chunk.content[:100]}...")
-    #         print(f"  Metadata: {doc_chunk.metadata}")
-
+    # # Step 3: Embed chunks using the configured embedding model
     # chunks_with_embeddings = pipeline.embed_chunks(
     #     chunk_map=chunks,
     #     batch_size=16,
@@ -893,6 +889,7 @@ def main() -> None:
     #     show_progress_bar=True,
     # )
 
+    # Step 4: Persist chunks to ChromaDB
     # # Add chunks to ChromaDB - can skip if it's already in there
     # pipeline.persist_chunks_to_chromadb(
     #     chunk_map=chunks_with_embeddings,
