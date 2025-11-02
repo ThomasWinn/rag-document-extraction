@@ -428,6 +428,7 @@ class DoclingIngestionPipeline:
         collection_name: str,
         persist_directory: Path,
         top_k: int = 5,
+        doc_id: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Return similarity search results for the supplied queries.
 
@@ -436,6 +437,7 @@ class DoclingIngestionPipeline:
             collection_name: Name of the target Chroma collection to read from.
             persist_directory: Filesystem location where the collection is stored.
             top_k: Maximum number of chunks to return per query.
+            doc_id: Optional metadata filter to restrict results to a source document.
 
         Returns:
             Raw Chroma query payload containing the ids, documents, metadata, and
@@ -460,10 +462,13 @@ class DoclingIngestionPipeline:
             normalize_embeddings=True,
         )
 
+        metadata_filter: Optional[Dict[str, Any]] = {"doc_id": doc_id} if doc_id else None
+
         return collection.query(
             query_embeddings=query_embeddings,
             n_results=top_k,
             include=["documents", "metadatas", "distances"],
+            where=metadata_filter,
         )
 
     def run_query_loop(
@@ -471,26 +476,30 @@ class DoclingIngestionPipeline:
         collection_name: str,
         persist_directory: Path,
         top_k: int = 5,
+        doc_id: Optional[str] = None,
+        initial_query: Optional[str] = None,
     ) -> None:
-        """Simple REPL to issue similarity queries against the collection."""
+        """Simple REPL to issue similarity queries against the collection.
+
+        Args:
+            collection_name: Name of the target Chroma collection to read from.
+            persist_directory: Filesystem location where the collection is stored.
+            top_k: Maximum number of chunks to return per query.
+            doc_id: Optional metadata filter to restrict results to a source document.
+            initial_query: Optional query that is executed once before the prompt loop.
+        """
 
         print("\nEnter a query to fetch the top matches (blank line to exit).")
-        while True:
-            try:
-                query = input("query> ").strip()
-            except (EOFError, KeyboardInterrupt):
-                print("\nExiting query loop.")
-                break
+        print("Commands: :doc <doc_id> to filter, :clear to remove filter.")
+        active_doc_id = doc_id
 
-            if not query:
-                print("Exiting query loop.")
-                break
-
+        def _execute(query: str) -> None:
             results = self.query_collection(
                 query_texts=[query],
                 collection_name=collection_name,
                 persist_directory=persist_directory,
                 top_k=top_k,
+                doc_id=active_doc_id,
             )
 
             ids = results.get("ids", [[]])[0]
@@ -500,7 +509,7 @@ class DoclingIngestionPipeline:
 
             if not ids:
                 print("No matches found.")
-                continue
+                return
 
             print(f"\nTop {len(ids)} results:")
             for rank, (chunk_id, distance, doc, metadata) in enumerate(
@@ -514,6 +523,36 @@ class DoclingIngestionPipeline:
                     f"\n    section={section_path}"
                     f"\n    text={doc_preview}\n"
                 )
+
+        if initial_query:
+            _execute(initial_query)
+
+        while True:
+            try:
+                query = input("query> ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print("\nExiting query loop.")
+                break
+
+            if not query:
+                print("Exiting query loop.")
+                break
+
+            if query.startswith(":doc"):
+                parts = query.split(maxsplit=1)
+                if len(parts) == 2 and parts[1]:
+                    active_doc_id = parts[1].strip()
+                    print(f"Restricting queries to doc_id='{active_doc_id}'.")
+                else:
+                    print("Usage: :doc <doc_id>")
+                continue
+
+            if query == ":clear":
+                active_doc_id = None
+                print("Cleared doc_id filter.")
+                continue
+
+            _execute(query)
 
     @staticmethod
     def _sanitize_metadata(metadata: Dict[str, Any]) -> Dict[str, Any]:
@@ -726,6 +765,8 @@ def main() -> None:
     """
     Update the variables below to configure ingestion without touching pipeline internals.
     """
+    doc_id = "BrokerComparison"
+    initial_question = "What is the definition of earnings for MARKET OPTION 1?"
     collection_name = "hierarchical_chunking"  # Name of the ChromaDB collection
     root = Path(__file__).resolve().parent  # project root
     pipeline = DoclingIngestionPipeline(
@@ -763,10 +804,13 @@ def main() -> None:
         batch_size=256,
     )
 
+    # We want to Q&A on one document only , so pass in doc_id
     pipeline.run_query_loop(
         collection_name=collection_name,
         persist_directory=root / "chroma_db",
         top_k=5,
+        doc_id=doc_id,  # or None to search all documents
+        initial_query=initial_question,
     )
 
 if __name__ == "__main__":
