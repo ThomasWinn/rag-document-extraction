@@ -899,6 +899,34 @@ def main() -> None:
     #     batch_size=256,
     # )
 
+    output = {}
+
+    attributes_list = [
+        "Guaranteed Issue - Employee", # $100,000
+        "Guaranteed Issue - Spouse",   # $5,000
+        "Benefit Maximum - Employee",  # 5 x Annual Earnings in $10,000 Increments up to $300,000 -> 5x to $300,000
+        "Benefit Duration - Employee", # null
+        "Benefit Schedule - Employee", # 10k increments to 300,000
+        "Benefit Maximum - AD&D",      # null
+        "Benefit Duration - AD&D",     # null
+        "Benefit Schedule - AD&D",     # null
+        "Elimination Period",          # null - found in LTD - might be a challenge for RAG as that will be the closest match
+        "Broker Commission",           # Flat 15%
+        # Rates
+        "AD&D Rates - Employee",       # 0.029
+        "AD&D Rates - Family",         # 0.029
+    ]
+
+    product_type_name = "vollifeadd" # prompt filename
+    full_product_name = "Voluntary Life / AD&D" # Add into the query loop
+
+    inforce_json = {
+        "attribute_name": "",
+        "value": "",
+        "page_citation": "",
+        "evidence": ""
+    }
+
     # We want to Q&A on one document only , so pass in doc_id
     pipeline.run_query_loop(
         collection_name=collection_name,
@@ -907,6 +935,12 @@ def main() -> None:
         doc_id=doc_id,  # or None to search all documents
         initial_query=initial_question,
     )
+
+    # Select top N chunks from the results and use them as context for LLM generation.
+    # This is where you would implement the logic to extract the top N chunks
+    # based on the reranker scores and use them as context for your LLM.
+    top_n = 3  # Number of top chunks to use
+
 
 if __name__ == "__main__":
     main()

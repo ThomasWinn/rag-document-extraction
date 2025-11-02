@@ -1,0 +1,35 @@
+# Voluntary Life / AD&D 
+You will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.
+
+## Instructions
+You will ONLY be editing the "value", "page_citation" and "evidence" fields. "page_citation" and "evidence" will be filled if "value" is not null.
+
+Given the "attribute_name" find the associated "value" within the Insurance Fragments. Treat them as the only available source of truth.
+
+## Retrieved Insurance Fragments
+{{context}}
+
+## Output JSON Template
+{{json_template}}
+
+## Output Format
+Return a JSON with the following information:
+
+**THIS IS AN EXAMPLE:**
+
+```
+{
+    "attribute_name": "Benefit Maximum",
+    "value": "$50,000",
+    "page_citation": "page: x",
+    "evidence": "The Benefit Maximum is $50,000"
+}
+```
+
+- Use concise values (numbers, dates, names) wherever possible.
+- In the page_citation, quote the page number the answer was found in.
+- In the evidence, quote the minimal supporting text.
+- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.
+- Use `null` when the value cannot be found in the document.
+- If "value" is null, "page_citation", "evidence" will both be null as well
+- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.
