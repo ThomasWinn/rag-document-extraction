@@ -6,6 +6,7 @@ __pycache__/
 **/.docling_cache/
 bge-large-en-v1.5/
 bge-reranker-base/
+**/chroma_db/
 
 # C extensions
 *.so

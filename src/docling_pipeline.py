@@ -13,6 +13,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 
+from chromadb import PersistentClient
+
 from docling.document_converter import DocumentConverter
 from docling.datamodel.document import ConversionStatus
 from docling_core.types.doc.document import (
@@ -327,7 +329,207 @@ class DoclingIngestionPipeline:
 
         return chunk_map
 
+    def persist_chunks_to_chromadb(
+        self,
+        chunk_map: Dict[str, List[DocumentChunk]],
+        collection_name: str,
+        persist_directory: Path,
+        reset_collection: bool = False,
+        batch_size: int = 128,
+    ) -> None:
+        """Write chunk embeddings to a ChromaDB collection.
+
+        A Chroma collection is the logical namespace that groups related vectors,
+        documents, and metadata together. Queries are always scoped to a collection,
+        so persisting chunks into the same collection keeps the embeddings that fuel
+        retrieval for a given dataset in one place.
+
+        Args:
+            chunk_map: Mapping of document id -> ordered list of enriched chunks.
+            collection_name: Target Chroma collection to upsert into.
+            persist_directory: Filesystem location for the Chroma persistent client.
+            reset_collection: Drop the existing collection before inserting.
+            batch_size: Number of vectors to upsert per request.
+        """
+
+        if not chunk_map:
+            logger.info("No chunks supplied for ChromaDB persistence.")
+            return
+
+        persist_directory = Path(persist_directory)
+        persist_directory.mkdir(parents=True, exist_ok=True)
+
+        client = PersistentClient(path=str(persist_directory))
+
+        if reset_collection:
+            try:
+                client.delete_collection(collection_name)
+                logger.info("Reset Chroma collection '%s'.", collection_name)
+            except ValueError:
+                logger.debug(
+                    "Collection '%s' did not exist prior to reset.",
+                    collection_name,
+                )
+
+        collection = client.get_or_create_collection(name=collection_name)
+
+        ids: List[str] = []
+        documents: List[str] = []
+        metadatas: List[Dict[str, Any]] = []
+        embeddings: List[List[float]] = []
+
+        for doc_id, chunks in chunk_map.items():
+            for chunk in chunks:
+                if chunk.embedding is None:
+                    raise ValueError(
+                        f"Chunk {chunk.chunk_id} for document {doc_id} has no embedding."
+                    )
+
+                ids.append(chunk.chunk_id)
+                documents.append(chunk.content)
+                metadata = self._sanitize_metadata(dict(chunk.metadata))
+                metadata.setdefault("doc_id", doc_id)
+                metadata["chunk_id"] = chunk.chunk_id
+                metadatas.append(metadata)
+                embeddings.append(chunk.embedding)
+
+        if not ids:
+            logger.info(
+                "No chunk content available to persist for collection '%s'.",
+                collection_name,
+            )
+            return
+
+        upsert_fn = getattr(collection, "upsert", None)
+        for start in range(0, len(ids), batch_size):
+            end = start + batch_size
+            payload = {
+                "ids": ids[start:end],
+                "documents": documents[start:end],
+                "metadatas": metadatas[start:end],
+                "embeddings": embeddings[start:end],
+            }
+            if upsert_fn is not None:
+                upsert_fn(**payload)
+            else:
+                collection.add(**payload)
+
+        logger.info(
+            "Persisted %s chunks to Chroma collection '%s' at %s.",
+            len(ids),
+            collection_name,
+            persist_directory,
+        )
+
     # ------------------------------------------------------------------ Helpers
+    def query_collection(
+        self,
+        query_texts: List[str],
+        collection_name: str,
+        persist_directory: Path,
+        top_k: int = 5,
+    ) -> Dict[str, Any]:
+        """Return similarity search results for the supplied queries.
+
+        Args:
+            query_texts: One or more natural-language queries to embed and search.
+            collection_name: Name of the target Chroma collection to read from.
+            persist_directory: Filesystem location where the collection is stored.
+            top_k: Maximum number of chunks to return per query.
+
+        Returns:
+            Raw Chroma query payload containing the ids, documents, metadata, and
+            distances for the closest matches.
+        """
+
+        if not query_texts:
+            raise ValueError("At least one query string must be provided.")
+
+        persist_directory = Path(persist_directory)
+        client = PersistentClient(path=str(persist_directory))
+
+        try:
+            collection = client.get_collection(name=collection_name)
+        except ValueError as exc:
+            raise ValueError(
+                f"Collection '{collection_name}' was not found at {persist_directory}."
+            ) from exc
+
+        query_embeddings = self.embedder.encode(
+            query_texts,
+            normalize_embeddings=True,
+        )
+
+        return collection.query(
+            query_embeddings=query_embeddings,
+            n_results=top_k,
+            include=["documents", "metadatas", "distances"],
+        )
+
+    def run_query_loop(
+        self,
+        collection_name: str,
+        persist_directory: Path,
+        top_k: int = 5,
+    ) -> None:
+        """Simple REPL to issue similarity queries against the collection."""
+
+        print("\nEnter a query to fetch the top matches (blank line to exit).")
+        while True:
+            try:
+                query = input("query> ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print("\nExiting query loop.")
+                break
+
+            if not query:
+                print("Exiting query loop.")
+                break
+
+            results = self.query_collection(
+                query_texts=[query],
+                collection_name=collection_name,
+                persist_directory=persist_directory,
+                top_k=top_k,
+            )
+
+            ids = results.get("ids", [[]])[0]
+            documents = results.get("documents", [[]])[0]
+            metadatas = results.get("metadatas", [[]])[0]
+            distances = results.get("distances", [[]])[0]
+
+            if not ids:
+                print("No matches found.")
+                continue
+
+            print(f"\nTop {len(ids)} results:")
+            for rank, (chunk_id, distance, doc, metadata) in enumerate(
+                zip(ids, distances, documents, metadatas),
+                start=1,
+            ):
+                doc_preview = (doc[:200] + "...") if len(doc) > 200 else doc
+                section_path = metadata.get("section_path_str")
+                print(
+                    f"[{rank}] chunk={chunk_id} distance={distance:.4f}"
+                    f"\n    section={section_path}"
+                    f"\n    text={doc_preview}\n"
+                )
+
+    @staticmethod
+    def _sanitize_metadata(metadata: Dict[str, Any]) -> Dict[str, Any]:
+        """Coerce metadata values into Chroma-compatible scalar types."""
+
+        def _coerce(value: Any) -> Optional[Any]:
+            if value is None or isinstance(value, (str, int, float, bool)):
+                return value
+            if isinstance(value, (list, tuple, set)):
+                return json.dumps(list(value), ensure_ascii=False)
+            if isinstance(value, dict):
+                return json.dumps(value, ensure_ascii=False)
+            return str(value)
+
+        return {key: _coerce(value) for key, value in metadata.items()}
+
     def _build_sections(
         self,
         doc: DoclingDocument,
@@ -524,12 +726,13 @@ def main() -> None:
     """
     Update the variables below to configure ingestion without touching pipeline internals.
     """
+    collection_name = "hierarchical_chunking"  # Name of the ChromaDB collection
     root = Path(__file__).resolve().parent  # project root
     pipeline = DoclingIngestionPipeline(
         chunk_size=512,
         chunk_overlap=40,
         data_path=root / "data",  # or root / "src" / "data" if that’s where PDFs live
-        embedding_model_name="bge-large-en-v1.5"
+        embedding_model_name="BAAI/bge-large-en-v1.5"
     )
     pdfs = pipeline.convert_pdf_documents()
 
@@ -551,10 +754,20 @@ def main() -> None:
         show_progress_bar=True,
     )
 
-    for chunk in chunks_with_embeddings:
-        print(f"Document ID: {chunk}")
-        for doc_chunk in chunks_with_embeddings[chunk]:
-            print(f"  Embeddings: {doc_chunk.embeddings}")
+    # Add chunks to ChromaDB - can skip if it's already in there
+    pipeline.persist_chunks_to_chromadb(
+        chunk_map=chunks_with_embeddings,
+        collection_name=collection_name, # Existing: hierarchical_chunking
+        persist_directory=root / "chroma_db",
+        reset_collection=False, # If True, will delete existing collection * NEEDS TO EXIST *
+        batch_size=256,
+    )
+
+    pipeline.run_query_loop(
+        collection_name=collection_name,
+        persist_directory=root / "chroma_db",
+        top_k=5,
+    )
 
 if __name__ == "__main__":
     main()
