@@ -11,7 +11,7 @@ import logging
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 from chromadb import PersistentClient
 
@@ -28,7 +28,7 @@ from docling_core.types.doc.document import (
 )
 from langchain_core.documents import Document as LCDocument
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import CrossEncoder, SentenceTransformer
 
 
 logger = logging.getLogger(__name__)
@@ -58,6 +58,7 @@ class DoclingIngestionPipeline:
         cache_dir: Optional[Path] = None,
         use_cache: bool = True,
         embedding_device: Optional[str] = "mps",
+        reranker_model_name: Optional[str] = "BAAI/bge-reranker-base",
     ) -> None:
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
@@ -65,11 +66,13 @@ class DoclingIngestionPipeline:
         self.use_cache = use_cache
         self.embedding_model_name = embedding_model_name
         self.embedding_device = embedding_device
+        self.reranker_model_name = reranker_model_name
         self.embedder: SentenceTransformer = SentenceTransformer(
             embedding_model_name,
             device=self.embedding_device,
             trust_remote_code=True,
         )
+        self._reranker: Optional[CrossEncoder] = None
 
         if not self.data_path.exists():
             raise FileNotFoundError(
@@ -470,6 +473,75 @@ class DoclingIngestionPipeline:
             include=["documents", "metadatas", "distances"],
             where=metadata_filter,
         )
+    
+    def _ensure_reranker(self) -> CrossEncoder:
+        """Lazily load and cache the cross-encoder reranker."""
+
+        if not self.reranker_model_name:
+            raise ValueError("Reranker model name not configured.")
+        if self._reranker is None:
+            self._reranker = CrossEncoder(
+                self.reranker_model_name,
+                device=self.embedding_device,
+                trust_remote_code=True,
+                max_length=512,
+            )
+        return self._reranker
+
+    def rerank_query_results(
+        self,
+        query: str,
+        ids: List[str],
+        documents: List[str],
+        metadatas: List[Dict[str, Any]],
+        distances: List[float],
+        top_k: int,
+    ) -> Tuple[List[str], List[str], List[Dict[str, Any]], List[float], Optional[List[float]]]:
+        """Rerank retrieved chunks using the configured cross-encoder.
+
+        Reranker model is called for each query for each retrieved-to-document pair. (slow)
+
+        Args:
+            query: Natural-language query used for retrieval.
+            ids: Ordered chunk identifiers returned by the vector search.
+            documents: Chunk texts corresponding to each id.
+            metadatas: Metadata payloads aligned with `ids`.
+            distances: Vector-space similarity distances (cosine or inner-product).
+            top_k: Maximum number of reranked results to keep.
+
+        Returns:
+            Tuple containing the reranked ids, documents, metadata, and distances,
+            along with the list of raw reranker scores.
+        """
+
+        if not ids or not self.reranker_model_name:
+            return ids, documents, metadatas, distances, None
+
+        reranker = self._ensure_reranker()
+        pairs = [(query, doc) for doc in documents]
+        scores = reranker.predict(pairs)
+        indices = sorted(
+            range(len(scores)),
+            key=lambda idx: float(scores[idx]),
+            reverse=True,
+        )[: top_k or len(scores)]
+
+        reranked_ids = [ids[idx] for idx in indices]
+        reranked_docs = [documents[idx] for idx in indices]
+        reranked_metadatas = [metadatas[idx] for idx in indices]
+        if distances:
+            reranked_distances = [distances[idx] for idx in indices]
+        else:
+            reranked_distances = [None] * len(indices)
+        reranker_scores = [float(scores[idx]) for idx in indices]
+
+        return (
+            reranked_ids,
+            reranked_docs,
+            reranked_metadatas,
+            reranked_distances,
+            reranker_scores,
+        )
 
     def run_query_loop(
         self,
@@ -511,15 +583,40 @@ class DoclingIngestionPipeline:
                 print("No matches found.")
                 return
 
-            print(f"\nTop {len(ids)} results:")
-            for rank, (chunk_id, distance, doc, metadata) in enumerate(
-                zip(ids, distances, documents, metadatas),
+            (
+                reranked_ids,
+                reranked_docs,
+                reranked_metadatas,
+                reranked_distances,
+                reranker_scores,
+            ) = self.rerank_query_results(
+                query=query,
+                ids=ids,
+                documents=documents,
+                metadatas=metadatas,
+                distances=distances,
+                top_k=top_k,
+            )
+
+            print(f"\nTop {len(reranked_ids)} results:")
+            for rank, (chunk_id, distance, doc, metadata, score) in enumerate(
+                zip(
+                    reranked_ids,
+                    reranked_distances,
+                    reranked_docs,
+                    reranked_metadatas,
+                    reranker_scores or [None] * len(reranked_ids),
+                ),
                 start=1,
             ):
                 doc_preview = (doc[:200] + "...") if len(doc) > 200 else doc
                 section_path = metadata.get("section_path_str")
+                distance_str = f" distance={distance:.4f}" if isinstance(distance, (int, float)) else ""
+                score_str = (
+                    f" score={score:.4f}" if isinstance(score, (int, float)) else ""
+                )
                 print(
-                    f"[{rank}] chunk={chunk_id} distance={distance:.4f}"
+                    f"[{rank}] chunk={chunk_id}{distance_str}{score_str}"
                     f"\n    section={section_path}"
                     f"\n    text={doc_preview}\n"
                 )
@@ -773,12 +870,13 @@ def main() -> None:
         chunk_size=512,
         chunk_overlap=40,
         data_path=root / "data",  # or root / "src" / "data" if that’s where PDFs live
-        embedding_model_name="BAAI/bge-large-en-v1.5"
+        embedding_model_name="BAAI/bge-large-en-v1.5",
+        reranker_model_name="BAAI/bge-reranker-base"
     )
-    pdfs = pipeline.convert_pdf_documents()
+    # pdfs = pipeline.convert_pdf_documents()
 
-    # Hierarchical Chunking with Document Metadata
-    chunks = pipeline.build_hierarchical_chunks(doc_map=pdfs)
+    # # Hierarchical Chunking with Document Metadata
+    # chunks = pipeline.build_hierarchical_chunks(doc_map=pdfs)
 
     # # Process chunks as needed
     # for chunk in chunks:
@@ -788,21 +886,21 @@ def main() -> None:
     #         print(f"  Content: {doc_chunk.content[:100]}...")
     #         print(f"  Metadata: {doc_chunk.metadata}")
 
-    chunks_with_embeddings = pipeline.embed_chunks(
-        chunk_map=chunks,
-        batch_size=16,
-        normalize=True,
-        show_progress_bar=True,
-    )
+    # chunks_with_embeddings = pipeline.embed_chunks(
+    #     chunk_map=chunks,
+    #     batch_size=16,
+    #     normalize=True,
+    #     show_progress_bar=True,
+    # )
 
-    # Add chunks to ChromaDB - can skip if it's already in there
-    pipeline.persist_chunks_to_chromadb(
-        chunk_map=chunks_with_embeddings,
-        collection_name=collection_name, # Existing: hierarchical_chunking
-        persist_directory=root / "chroma_db",
-        reset_collection=False, # If True, will delete existing collection * NEEDS TO EXIST *
-        batch_size=256,
-    )
+    # # Add chunks to ChromaDB - can skip if it's already in there
+    # pipeline.persist_chunks_to_chromadb(
+    #     chunk_map=chunks_with_embeddings,
+    #     collection_name=collection_name, # Existing: hierarchical_chunking
+    #     persist_directory=root / "chroma_db",
+    #     reset_collection=False, # If True, will delete existing collection * NEEDS TO EXIST *
+    #     batch_size=256,
+    # )
 
     # We want to Q&A on one document only , so pass in doc_id
     pipeline.run_query_loop(
