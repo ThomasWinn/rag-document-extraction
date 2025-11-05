@@ -1,0 +1,74 @@
+{
+  "Guaranteed Issue - Employee": {
+    "attribute_name": "Guaranteed Issue - Employee",
+    "value": "$100,000",
+    "page_citation": "page: 7",
+    "evidence": "Voluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000;"
+  },
+  "Guaranteed Issue - Spouse": {
+    "attribute_name": "Guaranteed Issue - Spouse",
+    "value": "$50,000",
+    "page_citation": "page: 7",
+    "evidence": "SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000"
+  },
+  "Benefit Maximum - Employee": {
+    "attribute_name": "Benefit Maximum - Employee",
+    "value": "$300,000",
+    "page_citation": "page: 7",
+    "evidence": "EE: 5 x Annual Earnings in $10,000 Increments up to $300,000"
+  },
+  "Benefit Duration - Employee": {
+    "attribute_name": "Benefit Duration - Employee",
+    "value": null,
+    "page_citation": null,
+    "evidence": null
+  },
+  "Benefit Schedule - Employee": {
+    "attribute_name": "Benefit Schedule - Employee",
+    "value": "5 x Annual Earnings in $10,000 Increments up to $300,000",
+    "page_citation": "page: 7",
+    "evidence": "Voluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000"
+  },
+  "Benefit Maximum - AD&D": {
+    "attribute_name": "Benefit Maximum - AD&D",
+    "value": "$300,000",
+    "page_citation": "page: 7",
+    "evidence": "EE: 5 x Annual Earnings in $10,000 Increments up to $300,000"
+  },
+  "Benefit Duration - AD&D": {
+    "attribute_name": "Benefit Duration - AD&D",
+    "value": null,
+    "page_citation": null,
+    "evidence": null
+  },
+  "Benefit Schedule - AD&D": {
+    "attribute_name": "Benefit Schedule - AD&D",
+    "value": "Employee: $0.029, Family: $0.029",
+    "page_citation": "page: 7",
+    "evidence": "Optional AD&D: Employee | $0.029 | $0.029 Optional AD&D: Family | $0.029 | $0.029"
+  },
+  "Elimination Period": {
+    "attribute_name": "Elimination Period",
+    "value": null,
+    "page_citation": null,
+    "evidence": null
+  },
+  "Broker Commission": {
+    "attribute_name": "Broker Commission",
+    "value": "15%",
+    "page_citation": "page: 8, page: 9",
+    "evidence": "-Voluntary Life / AD&D - Flat 15%"
+  },
+  "AD&D Rates - Employee": {
+    "attribute_name": "AD&D Rates - Employee",
+    "value": "$0.029",
+    "page_citation": "page: 7",
+    "evidence": "Optional AD&D: Employee | $0.029"
+  },
+  "AD&D Rates - Family": {
+    "attribute_name": "AD&D Rates - Family",
+    "value": "$0.029",
+    "page_citation": "page: 7",
+    "evidence": "Optional AD&D: Family | $0.029"
+  }
+}

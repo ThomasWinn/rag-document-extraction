@@ -1,0 +1,938 @@
+{
+  "Guaranteed Issue - Employee": {
+    "attribute_index": 0,
+    "query": "Find me the Guaranteed Issue - Employee for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "contains_table": true,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_level": 1,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_size": 512,
+          "page_span": "[7, 7]",
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_index": 27,
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "contains_list": false,
+          "chunk_overlap": 40,
+          "page_numbers": "[7]",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027"
+        },
+        "distance": 0.5849411487579346,
+        "reranker_score": 0.9640295505523682
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_overlap": 40,
+          "chunk_index": 23,
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "contains_table": false,
+          "page_numbers": "[6]",
+          "page_span": "[6, 6]",
+          "section_level": 1,
+          "chunk_size": 512,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]",
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "contains_list": false,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023"
+        },
+        "distance": 0.7005888223648071,
+        "reranker_score": 0.21946033835411072
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0007",
+        "text": "# VISION, LIFE, ACCIDENT, DISABILITY, VOLUNTARY WORKSITE PRODUCTS",
+        "metadata": {
+          "doc_id": "RFP-CityOfBellaire",
+          "page_span": "[2, 2]",
+          "section_path_str": "RFP-CityOfBellaire > VISION, LIFE, ACCIDENT, DISABILITY, VOLUNTARY WORKSITE PRODUCTS",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0007",
+          "chunk_size": 512,
+          "section_path": "[\"RFP-CityOfBellaire\", \"VISION, LIFE, ACCIDENT, DISABILITY, VOLUNTARY WORKSITE PRODUCTS\"]",
+          "page_numbers": "[2]",
+          "contains_list": false,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_overlap": 40,
+          "section_title": "VISION, LIFE, ACCIDENT, DISABILITY, VOLUNTARY WORKSITE PRODUCTS",
+          "contains_table": false,
+          "section_level": 1,
+          "chunk_index": 7
+        },
+        "distance": 0.7118096351623535,
+        "reranker_score": 0.0004533016763161868
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 2, ]\n# VISION, LIFE, ACCIDENT, DISABILITY, VOLUNTARY WORKSITE PRODUCTS",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 2, ]\n# VISION, LIFE, ACCIDENT, DISABILITY, VOLUNTARY WORKSITE PRODUCTS\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Guaranteed Issue - Employee\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Guaranteed Issue - Employee\",\n    \"value\": \"$100,000\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"Voluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000;\"\n}"
+  },
+  "Guaranteed Issue - Spouse": {
+    "attribute_index": 1,
+    "query": "Find me the Guaranteed Issue - Spouse for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "chunk_index": 27,
+          "contains_list": false,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_size": 512,
+          "chunk_overlap": 40,
+          "page_numbers": "[7]",
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "doc_id": "RFP-CityOfBellaire",
+          "section_level": 1,
+          "page_span": "[7, 7]",
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "contains_table": true
+        },
+        "distance": 0.6357672214508057,
+        "reranker_score": 0.8662165999412537
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+        "text": "# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+        "metadata": {
+          "chunk_overlap": 40,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+          "section_level": 1,
+          "section_path_str": "RFP-CityOfBellaire > Current Enrollment",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "contains_table": true,
+          "doc_id": "RFP-CityOfBellaire",
+          "page_span": "[3, 3]",
+          "section_title": "Current Enrollment",
+          "chunk_size": 512,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Current Enrollment\"]",
+          "chunk_index": 11,
+          "page_numbers": "[3]",
+          "contains_list": false
+        },
+        "distance": 0.7829041481018066,
+        "reranker_score": 0.008587908931076527
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0025",
+        "text": "# VII. Long Term Disability Insurance - METLIFE",
+        "metadata": {
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_size": 512,
+          "section_level": 1,
+          "contains_list": false,
+          "section_path_str": "RFP-CityOfBellaire > VII. Long Term Disability Insurance - METLIFE",
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0025",
+          "page_span": "[6, 6]",
+          "contains_table": false,
+          "chunk_overlap": 40,
+          "page_numbers": "[6]",
+          "section_title": "VII. Long Term Disability Insurance - METLIFE",
+          "chunk_index": 25,
+          "section_path": "[\"RFP-CityOfBellaire\", \"VII. Long Term Disability Insurance - METLIFE\"]"
+        },
+        "distance": 0.7737317085266113,
+        "reranker_score": 0.0004243195289745927
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n### Rank 3 | Pages: [, 6, ]\n# VII. Long Term Disability Insurance - METLIFE",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n### Rank 3 | Pages: [, 6, ]\n# VII. Long Term Disability Insurance - METLIFE\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Guaranteed Issue - Spouse\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Guaranteed Issue - Spouse\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000\"\n}"
+  },
+  "Benefit Maximum - Employee": {
+    "attribute_index": 2,
+    "query": "Find me the Benefit Maximum - Employee for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "chunk_index": 23,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]",
+          "page_numbers": "[6]",
+          "contains_table": false,
+          "contains_list": false,
+          "chunk_overlap": 40,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_size": 512,
+          "section_level": 1,
+          "page_span": "[6, 6]",
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "source_file": "RFP-CityOfBellaire.pdf"
+        },
+        "distance": 0.5202440023422241,
+        "reranker_score": 0.9584468603134155
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "chunk_overlap": 40,
+          "chunk_size": 512,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "contains_table": true,
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "page_numbers": "[7]",
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_index": 27,
+          "section_level": 1,
+          "contains_list": false,
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "page_span": "[7, 7]"
+        },
+        "distance": 0.4758649468421936,
+        "reranker_score": 0.5706390142440796
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+        "text": "# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+        "metadata": {
+          "contains_list": false,
+          "page_numbers": "[3]",
+          "section_level": 1,
+          "contains_table": true,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_path": "[\"RFP-CityOfBellaire\", \"Current Enrollment\"]",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_index": 11,
+          "section_title": "Current Enrollment",
+          "page_span": "[3, 3]",
+          "chunk_size": 512,
+          "section_path_str": "RFP-CityOfBellaire > Current Enrollment",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+          "chunk_overlap": 40
+        },
+        "distance": 0.694809079170227,
+        "reranker_score": 0.020908024162054062
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Benefit Maximum - Employee\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Benefit Maximum - Employee\",\n    \"value\": \"$300,000\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"EE: 5 x Annual Earnings in $10,000 Increments up to $300,000\"\n}"
+  },
+  "Benefit Duration - Employee": {
+    "attribute_index": 3,
+    "query": "Find me the Benefit Duration - Employee for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "chunk_size": 512,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "page_numbers": "[6]",
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "contains_table": false,
+          "doc_id": "RFP-CityOfBellaire",
+          "page_span": "[6, 6]",
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_index": 23,
+          "chunk_overlap": 40,
+          "section_level": 1,
+          "contains_list": false,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]"
+        },
+        "distance": 0.6007801294326782,
+        "reranker_score": 0.6160427927970886
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "page_numbers": "[7]",
+          "chunk_size": 512,
+          "contains_table": true,
+          "section_level": 1,
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "page_span": "[7, 7]",
+          "chunk_overlap": 40,
+          "chunk_index": 27,
+          "doc_id": "RFP-CityOfBellaire",
+          "contains_list": false,
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE"
+        },
+        "distance": 0.5067765712738037,
+        "reranker_score": 0.47225916385650635
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0026",
+        "text": "# Long Term Disability (LTD) - Elim Period: 180 Days; Benefit: 60% of Monthly Earnings; Maximum Ben: $5,000; Definition of Disability:  2-Year 'Own Occupation' Duration:  To SSNRA\n\nThe request is to duplicate the current plan of benefits as closely as possible (Current benefit booklet is attached).  The City provides an LTD benefit of 60% of monthly earnings to a maximum of $5,000 per month. The elimination period is 180 days.  Clearly define any limitations surrounding actively at work provisions. NOTE: bidders are encouraged to give options for more than a single year contract.  Experience is attached. Include  an  Current  LTD  rate  is  .277%.    The  City  does  participate  in  TMRS  (Texas  Municipal  Retirement\n\nSystem.)  The City would consider an increased LTD benefit of $6,000 per month.  Please provide rates for that alternate as well as the current benefit.",
+        "metadata": {
+          "contains_table": false,
+          "page_numbers": "[6, 7]",
+          "chunk_index": 26,
+          "section_path_str": "RFP-CityOfBellaire > Long Term Disability (LTD) - Elim Period: 180 Days; Benefit: 60% of Monthly Earnings; Maximum Ben: $5,000; Definition of Disability:  2-Year 'Own Occupation' Duration:  To SSNRA",
+          "section_title": "Long Term Disability (LTD) - Elim Period: 180 Days; Benefit: 60% of Monthly Earnings; Maximum Ben: $5,000; Definition of Disability:  2-Year 'Own Occupation' Duration:  To SSNRA",
+          "contains_list": false,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0026",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_overlap": 40,
+          "page_span": "[6, 7]",
+          "section_path": "[\"RFP-CityOfBellaire\", \"Long Term Disability (LTD) - Elim Period: 180 Days; Benefit: 60% of Monthly Earnings; Maximum Ben: $5,000; Definition of Disability:  2-Year 'Own Occupation' Duration:  To SSNRA\"]",
+          "section_level": 1,
+          "chunk_size": 512,
+          "doc_id": "RFP-CityOfBellaire"
+        },
+        "distance": 0.6298069953918457,
+        "reranker_score": 0.0028170067816972733
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 6, ,,  , 7, ]\n# Long Term Disability (LTD) - Elim Period: 180 Days; Benefit: 60% of Monthly Earnings; Maximum Ben: $5,000; Definition of Disability:  2-Year 'Own Occupation' Duration:  To SSNRA\n\nThe request is to duplicate the current plan of benefits as closely as possible (Current benefit booklet is attached).  The City provides an LTD benefit of 60% of monthly earnings to a maximum of $5,000 per month. The elimination period is 180 days.  Clearly define any limitations surrounding actively at work provisions. NOTE: bidders are encouraged to give options for more than a single year contract.  Experience is attached. Include  an  Current  LTD  rate  is  .277%.    The  City  does  participate  in  TMRS  (Texas  Municipal  Retirement\n\nSystem.)  The City would consider an increased LTD benefit of $6,000 per month.  Please provide rates for that alternate as well as the current benefit.",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 6, ,,  , 7, ]\n# Long Term Disability (LTD) - Elim Period: 180 Days; Benefit: 60% of Monthly Earnings; Maximum Ben: $5,000; Definition of Disability:  2-Year 'Own Occupation' Duration:  To SSNRA\n\nThe request is to duplicate the current plan of benefits as closely as possible (Current benefit booklet is attached).  The City provides an LTD benefit of 60% of monthly earnings to a maximum of $5,000 per month. The elimination period is 180 days.  Clearly define any limitations surrounding actively at work provisions. NOTE: bidders are encouraged to give options for more than a single year contract.  Experience is attached. Include  an  Current  LTD  rate  is  .277%.    The  City  does  participate  in  TMRS  (Texas  Municipal  Retirement\n\nSystem.)  The City would consider an increased LTD benefit of $6,000 per month.  Please provide rates for that alternate as well as the current benefit.\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Benefit Duration - Employee\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Benefit Duration - Employee\",\n    \"value\": null,\n    \"page_citation\": null,\n    \"evidence\": null\n}"
+  },
+  "Benefit Schedule - Employee": {
+    "attribute_index": 4,
+    "query": "Find me the Benefit Schedule - Employee for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "doc_id": "RFP-CityOfBellaire",
+          "section_level": 1,
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "contains_list": false,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "page_span": "[7, 7]",
+          "page_numbers": "[7]",
+          "chunk_size": 512,
+          "chunk_overlap": 40,
+          "contains_table": true,
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_index": 27
+        },
+        "distance": 0.5315525531768799,
+        "reranker_score": 0.8542874455451965
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "page_span": "[6, 6]",
+          "page_numbers": "[6]",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "contains_list": false,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_overlap": 40,
+          "chunk_size": 512,
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_index": 23,
+          "contains_table": false,
+          "section_level": 1,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]"
+        },
+        "distance": 0.6549099683761597,
+        "reranker_score": 0.7647152543067932
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+        "text": "# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+        "metadata": {
+          "page_span": "[3, 3]",
+          "contains_table": true,
+          "chunk_size": 512,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_overlap": 40,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Current Enrollment\"]",
+          "contains_list": false,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+          "section_title": "Current Enrollment",
+          "section_level": 1,
+          "page_numbers": "[3]",
+          "section_path_str": "RFP-CityOfBellaire > Current Enrollment",
+          "chunk_index": 11,
+          "doc_id": "RFP-CityOfBellaire"
+        },
+        "distance": 0.6795365810394287,
+        "reranker_score": 0.07043065875768661
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Benefit Schedule - Employee\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Benefit Schedule - Employee\",\n    \"value\": \"5 x Annual Earnings in $10,000 Increments up to $300,000\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"Voluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000\"\n}"
+  },
+  "Benefit Maximum - AD&D": {
+    "attribute_index": 5,
+    "query": "Find me the Benefit Maximum - AD&D for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "contains_list": false,
+          "chunk_index": 23,
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_size": 512,
+          "page_span": "[6, 6]",
+          "page_numbers": "[6]",
+          "contains_table": false,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_level": 1,
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_overlap": 40,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]"
+        },
+        "distance": 0.55446457862854,
+        "reranker_score": 0.9884518384933472
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "chunk_overlap": 40,
+          "contains_list": false,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "section_level": 1,
+          "chunk_size": 512,
+          "chunk_index": 27,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "page_numbers": "[7]",
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "page_span": "[7, 7]",
+          "doc_id": "RFP-CityOfBellaire",
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "contains_table": true
+        },
+        "distance": 0.4904455244541168,
+        "reranker_score": 0.7180584073066711
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+        "text": "# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+        "metadata": {
+          "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+          "chunk_size": 512,
+          "chunk_index": 11,
+          "contains_list": false,
+          "page_numbers": "[3]",
+          "doc_id": "RFP-CityOfBellaire",
+          "contains_table": true,
+          "section_level": 1,
+          "page_span": "[3, 3]",
+          "section_path": "[\"RFP-CityOfBellaire\", \"Current Enrollment\"]",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_path_str": "RFP-CityOfBellaire > Current Enrollment",
+          "chunk_overlap": 40,
+          "section_title": "Current Enrollment"
+        },
+        "distance": 0.7194422483444214,
+        "reranker_score": 0.017145879566669464
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Benefit Maximum - AD&D\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Benefit Maximum - AD&D\",\n    \"value\": \"$300,000\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"EE: 5 x Annual Earnings in $10,000 Increments up to $300,000\"\n}"
+  },
+  "Benefit Duration - AD&D": {
+    "attribute_index": 6,
+    "query": "Find me the Benefit Duration - AD&D for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "chunk_size": 512,
+          "section_level": 1,
+          "page_numbers": "[6]",
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_index": 23,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]",
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_overlap": 40,
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "page_span": "[6, 6]",
+          "contains_list": false,
+          "contains_table": false
+        },
+        "distance": 0.6450628042221069,
+        "reranker_score": 0.8311977982521057
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "doc_id": "RFP-CityOfBellaire",
+          "section_level": 1,
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "page_span": "[7, 7]",
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "contains_list": false,
+          "chunk_overlap": 40,
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_size": 512,
+          "chunk_index": 27,
+          "page_numbers": "[7]",
+          "contains_table": true
+        },
+        "distance": 0.527077317237854,
+        "reranker_score": 0.7487014532089233
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+        "text": "# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+        "metadata": {
+          "section_path_str": "RFP-CityOfBellaire > Current Enrollment",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_title": "Current Enrollment",
+          "page_numbers": "[3]",
+          "section_level": 1,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+          "section_path": "[\"RFP-CityOfBellaire\", \"Current Enrollment\"]",
+          "chunk_index": 11,
+          "chunk_size": 512,
+          "contains_table": true,
+          "contains_list": false,
+          "page_span": "[3, 3]",
+          "chunk_overlap": 40
+        },
+        "distance": 0.7339255809783936,
+        "reranker_score": 0.031345002353191376
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Benefit Duration - AD&D\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Benefit Duration - AD&D\",\n    \"value\": null,\n    \"page_citation\": null,\n    \"evidence\": null\n}"
+  },
+  "Benefit Schedule - AD&D": {
+    "attribute_index": 7,
+    "query": "Find me the Benefit Schedule - AD&D for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "chunk_size": 512,
+          "page_span": "[7, 7]",
+          "section_level": 1,
+          "contains_list": false,
+          "page_numbers": "[7]",
+          "doc_id": "RFP-CityOfBellaire",
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_index": 27,
+          "chunk_overlap": 40,
+          "contains_table": true,
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE"
+        },
+        "distance": 0.5602009296417236,
+        "reranker_score": 0.9488791823387146
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "chunk_index": 23,
+          "page_numbers": "[6]",
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "contains_table": false,
+          "section_level": 1,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_size": 512,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "chunk_overlap": 40,
+          "page_span": "[6, 6]",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "contains_list": false
+        },
+        "distance": 0.7105762958526611,
+        "reranker_score": 0.8928847908973694
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+        "text": "# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+        "metadata": {
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_overlap": 40,
+          "section_title": "Current Enrollment",
+          "section_level": 1,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_path": "[\"RFP-CityOfBellaire\", \"Current Enrollment\"]",
+          "chunk_size": 512,
+          "contains_table": true,
+          "page_span": "[3, 3]",
+          "page_numbers": "[3]",
+          "contains_list": false,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+          "section_path_str": "RFP-CityOfBellaire > Current Enrollment",
+          "chunk_index": 11
+        },
+        "distance": 0.7304113507270813,
+        "reranker_score": 0.09944906085729599
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Benefit Schedule - AD&D\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Benefit Schedule - AD&D\",\n    \"value\": \"Employee: $0.029, Family: $0.029\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"Optional AD&D: Employee | $0.029 | $0.029 Optional AD&D: Family | $0.029 | $0.029\"\n}"
+  },
+  "Elimination Period": {
+    "attribute_index": 8,
+    "query": "Find me the Elimination Period for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "contains_list": false,
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_index": 27,
+          "page_span": "[7, 7]",
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_overlap": 40,
+          "page_numbers": "[7]",
+          "section_level": 1,
+          "contains_table": true,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "chunk_size": 512
+        },
+        "distance": 0.6647351980209351,
+        "reranker_score": 0.04205653443932533
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_index": 23,
+          "contains_table": false,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_overlap": 40,
+          "page_span": "[6, 6]",
+          "section_level": 1,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]",
+          "chunk_size": 512,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "contains_list": false,
+          "page_numbers": "[6]",
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included"
+        },
+        "distance": 0.7751407027244568,
+        "reranker_score": 0.041129544377326965
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0024",
+        "text": "# VI. STD / Salary Continuance - Currently Self-Administered\n\nThe City currently provides a Salary continuance benefit in lieu of STD.  The city would like to explore the option of potentially putting a Advice To Pay ONLY benefit in place to provide a more formal review of potential claims and assist with the intake and oversight of its short term disability claimants.  Please quote Advice To Pay Services which would have a 14 Day Elimination and a 180 Day duration to match with the existing LTD Elimination period.",
+        "metadata": {
+          "contains_table": false,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "page_span": "[6, 6]",
+          "contains_list": false,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_level": 1,
+          "page_numbers": "[6]",
+          "section_title": "VI. STD / Salary Continuance - Currently Self-Administered",
+          "chunk_size": 512,
+          "section_path_str": "RFP-CityOfBellaire > VI. STD / Salary Continuance - Currently Self-Administered",
+          "chunk_overlap": 40,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0024",
+          "chunk_index": 24,
+          "section_path": "[\"RFP-CityOfBellaire\", \"VI. STD / Salary Continuance - Currently Self-Administered\"]"
+        },
+        "distance": 0.7914138436317444,
+        "reranker_score": 0.026812663301825523
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 6, ]\n# VI. STD / Salary Continuance - Currently Self-Administered\n\nThe City currently provides a Salary continuance benefit in lieu of STD.  The city would like to explore the option of potentially putting a Advice To Pay ONLY benefit in place to provide a more formal review of potential claims and assist with the intake and oversight of its short term disability claimants.  Please quote Advice To Pay Services which would have a 14 Day Elimination and a 180 Day duration to match with the existing LTD Elimination period.",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 2 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 3 | Pages: [, 6, ]\n# VI. STD / Salary Continuance - Currently Self-Administered\n\nThe City currently provides a Salary continuance benefit in lieu of STD.  The city would like to explore the option of potentially putting a Advice To Pay ONLY benefit in place to provide a more formal review of potential claims and assist with the intake and oversight of its short term disability claimants.  Please quote Advice To Pay Services which would have a 14 Day Elimination and a 180 Day duration to match with the existing LTD Elimination period.\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Elimination Period\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Elimination Period\",\n    \"value\": null,\n    \"page_citation\": null,\n    \"evidence\": null\n}"
+  },
+  "Broker Commission": {
+    "attribute_index": 9,
+    "query": "Find me the Broker Commission for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0036",
+        "text": "# XII. Commission\n\nAll bidders should include the following commission levels in their quotes:\n\n-Medical - Flat 3.5% or $43 PEPM if it is a 'Service Fee'\n\n-Dental - Flat 10%\n\n-Voluntary Vision - Flat 10%\n\n-Basic Life / AD&D- Flat 10%\n\n-Voluntary Life / AD&D - Flat 15%\n\n-LTD - Flat 10%",
+        "metadata": {
+          "section_path_str": "RFP-CityOfBellaire > XII. Commission",
+          "chunk_index": 36,
+          "page_numbers": "[8, 9]",
+          "section_path": "[\"RFP-CityOfBellaire\", \"XII. Commission\"]",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0036",
+          "page_span": "[8, 9]",
+          "contains_list": false,
+          "section_title": "XII. Commission",
+          "contains_table": false,
+          "chunk_size": 512,
+          "section_level": 1,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_overlap": 40
+        },
+        "distance": 0.6991302967071533,
+        "reranker_score": 0.7261657118797302
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "contains_table": true,
+          "contains_list": false,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "chunk_index": 27,
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "page_numbers": "[7]",
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "section_level": 1,
+          "page_span": "[7, 7]",
+          "chunk_size": 512,
+          "chunk_overlap": 40
+        },
+        "distance": 0.6087441444396973,
+        "reranker_score": 0.12085754424333572
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0022",
+        "text": "# V. Life / Accidental Death & Dismemberment Insurance - METLIFE",
+        "metadata": {
+          "contains_list": false,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "page_numbers": "[6]",
+          "section_title": "V. Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_size": 512,
+          "chunk_overlap": 40,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0022",
+          "contains_table": false,
+          "section_path_str": "RFP-CityOfBellaire > V. Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_index": 22,
+          "section_level": 1,
+          "page_span": "[6, 6]",
+          "section_path": "[\"RFP-CityOfBellaire\", \"V. Life / Accidental Death & Dismemberment Insurance - METLIFE\"]"
+        },
+        "distance": 0.7640455961227417,
+        "reranker_score": 0.000502370938193053
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 8, ,,  , 9, ]\n# XII. Commission\n\nAll bidders should include the following commission levels in their quotes:\n\n-Medical - Flat 3.5% or $43 PEPM if it is a 'Service Fee'\n\n-Dental - Flat 10%\n\n-Voluntary Vision - Flat 10%\n\n-Basic Life / AD&D- Flat 10%\n\n-Voluntary Life / AD&D - Flat 15%\n\n-LTD - Flat 10%\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 6, ]\n# V. Life / Accidental Death & Dismemberment Insurance - METLIFE",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 8, ,,  , 9, ]\n# XII. Commission\n\nAll bidders should include the following commission levels in their quotes:\n\n-Medical - Flat 3.5% or $43 PEPM if it is a 'Service Fee'\n\n-Dental - Flat 10%\n\n-Voluntary Vision - Flat 10%\n\n-Basic Life / AD&D- Flat 10%\n\n-Voluntary Life / AD&D - Flat 15%\n\n-LTD - Flat 10%\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 6, ]\n# V. Life / Accidental Death & Dismemberment Insurance - METLIFE\n\n## Output JSON Template\n{\n    \"attribute_name\": \"Broker Commission\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"Broker Commission\",\n    \"value\": \"15%\",\n    \"page_citation\": \"page: 8, page: 9\",\n    \"evidence\": \"-Voluntary Life / AD&D - Flat 15%\"\n}"
+  },
+  "AD&D Rates - Employee": {
+    "attribute_index": 10,
+    "query": "Find me the AD&D Rates - Employee for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "contains_list": false,
+          "section_level": 1,
+          "page_span": "[6, 6]",
+          "contains_table": false,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "page_numbers": "[6]",
+          "chunk_overlap": 40,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_index": 23,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]",
+          "chunk_size": 512,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included"
+        },
+        "distance": 0.5075417160987854,
+        "reranker_score": 0.9935404658317566
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "chunk_overlap": 40,
+          "chunk_size": 512,
+          "page_numbers": "[7]",
+          "chunk_index": 27,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "contains_table": true,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_level": 1,
+          "page_span": "[7, 7]",
+          "contains_list": false
+        },
+        "distance": 0.49618303775787354,
+        "reranker_score": 0.95132976770401
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+        "text": "# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+        "metadata": {
+          "contains_list": false,
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "section_title": "Current Enrollment",
+          "page_span": "[3, 3]",
+          "section_level": 1,
+          "page_numbers": "[3]",
+          "chunk_index": 11,
+          "contains_table": true,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_path_str": "RFP-CityOfBellaire > Current Enrollment",
+          "chunk_size": 512,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0011",
+          "section_path": "[\"RFP-CityOfBellaire\", \"Current Enrollment\"]",
+          "chunk_overlap": 40
+        },
+        "distance": 0.6556914448738098,
+        "reranker_score": 0.42706626653671265
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 3, ]\n# Current Enrollment\n\n| Basic Life/AD&D / LTD | 160 |\n| --- | --- |\n| Medical EPO / HDHP / KELSEYHMO | 157 - 36 EPO / 83 HDHP / 38HMO |\n| Dental Low / High | 152 - 82 DHMO / 70 DPPO |\n| Voluntary Life - Employee / Spouse / Child | 81 - 81 Employee / 20 Spouse / 75 Child |\n| Vision | 154 |\n| Total Eligible Fire / Police | 56 in the twodepartments - see census for job titles |\n\n## Output JSON Template\n{\n    \"attribute_name\": \"AD&D Rates - Employee\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"AD&D Rates - Employee\",\n    \"value\": \"$0.029\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"Optional AD&D: Employee | $0.029\"\n}"
+  },
+  "AD&D Rates - Family": {
+    "attribute_index": 11,
+    "query": "Find me the AD&D Rates - Family for Voluntary Life / AD&D.",
+    "top_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+        "text": "# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.",
+        "metadata": {
+          "contains_list": false,
+          "section_path": "[\"RFP-CityOfBellaire\", \"Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\"]",
+          "chunk_overlap": 40,
+          "chunk_index": 23,
+          "page_numbers": "[6]",
+          "doc_id": "RFP-CityOfBellaire",
+          "section_path_str": "RFP-CityOfBellaire > Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0023",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_size": 512,
+          "page_span": "[6, 6]",
+          "section_title": "Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included",
+          "section_level": 1,
+          "contains_table": false
+        },
+        "distance": 0.6360145211219788,
+        "reranker_score": 0.9740914702415466
+      },
+      {
+        "rank": 2,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+        "text": "# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |",
+        "metadata": {
+          "chunk_size": 512,
+          "contains_list": false,
+          "section_path": "[\"RFP-CityOfBellaire\", \"VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\"]",
+          "section_path_str": "RFP-CityOfBellaire > VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "section_level": 1,
+          "doc_id": "RFP-CityOfBellaire",
+          "chunk_id": "RFP-CityOfBellaire-chunk-0027",
+          "source_file": "RFP-CityOfBellaire.pdf",
+          "chunk_index": 27,
+          "contains_table": true,
+          "chunk_overlap": 40,
+          "page_numbers": "[7]",
+          "section_title": "VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE",
+          "page_span": "[7, 7]"
+        },
+        "distance": 0.5627607107162476,
+        "reranker_score": 0.9446619153022766
+      },
+      {
+        "rank": 3,
+        "chunk_id": "RFP-CityOfBellaire-chunk-0036",
+        "text": "# XII. Commission\n\nAll bidders should include the following commission levels in their quotes:\n\n-Medical - Flat 3.5% or $43 PEPM if it is a 'Service Fee'\n\n-Dental - Flat 10%\n\n-Voluntary Vision - Flat 10%\n\n-Basic Life / AD&D- Flat 10%\n\n-Voluntary Life / AD&D - Flat 15%\n\n-LTD - Flat 10%",
+        "metadata": {
+          "contains_table": false,
+          "page_span": "[8, 9]",
+          "section_title": "XII. Commission",
+          "section_path_str": "RFP-CityOfBellaire > XII. Commission",
+          "page_numbers": "[8, 9]",
+          "chunk_overlap": 40,
+          "chunk_id": "RFP-CityOfBellaire-chunk-0036",
+          "chunk_size": 512,
+          "section_path": "[\"RFP-CityOfBellaire\", \"XII. Commission\"]",
+          "contains_list": false,
+          "chunk_index": 36,
+          "doc_id": "RFP-CityOfBellaire",
+          "section_level": 1,
+          "source_file": "RFP-CityOfBellaire.pdf"
+        },
+        "distance": 0.7913578748703003,
+        "reranker_score": 0.6441566944122314
+      }
+    ],
+    "context": "### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 8, ,,  , 9, ]\n# XII. Commission\n\nAll bidders should include the following commission levels in their quotes:\n\n-Medical - Flat 3.5% or $43 PEPM if it is a 'Service Fee'\n\n-Dental - Flat 10%\n\n-Voluntary Vision - Flat 10%\n\n-Basic Life / AD&D- Flat 10%\n\n-Voluntary Life / AD&D - Flat 15%\n\n-LTD - Flat 10%",
+    "prompt": "# Voluntary Life / AD&D \nYou will be performing attribute extraction for Voluntary Life / AD&D products only and not for any other products.\n\n## Instructions\nYou will ONLY be editing the \"value\", \"page_citation\" and \"evidence\" fields. \"page_citation\" and \"evidence\" will be filled if \"value\" is not null.\n\nGiven the \"attribute_name\" find the associated \"value\" within the Insurance Fragments. Treat them as the only available source of truth.\n\n## Retrieved Insurance Fragments\n### Rank 1 | Pages: [, 6, ]\n# Basic  Life  /  AD&D  -  2  x  Annual  Salary  to  $200,000  Maximum;  GI:  $200,000;  Conversion:  Included; Portability: Included\n\nThe City currently provides 2x Annual Salary for Basic Life and AD&D benefit for all full time employees.  All other benefits should be duplicated as closely as possible. (Current benefit booklet is attached).  Clearly define any limitations surrounding actively at work provisions.  NOTE: bidders are encouraged to give options for more than a single-year contract.  Experience is attached.  The current Life rate is $.17 and the current AD&D rate is $.028.\n\n### Rank 2 | Pages: [, 7, ]\n# VIII. Voluntary Life / Accidental Death & Dismemberment Insurance - METLIFE\n\nVoluntary Life/AD&D - EE: 5 x Annual Earnings in $10,000 Increments up to $300,000; Guarantee Issue (GI): $100,000; SP: $5,000 Increments up to $100,000 or 50% of EE; GI: $50,000; CH: $10,000\n\nThe current voluntary benefits are listed below.  The request is to duplicate the current plan of benefits. (Current benefit booklet is attached.)  Provide a full open enrollment up to the guarantee issue as part of the open enrollment for 10/1/2023.\n\n| Age Bands | Rate/$1,000 | Rate/$1,000 |\n| --- | --- | --- |\n| 25 - 29 | $0.063 | $0.063 |\n| 30 - 34 | $0.080 | $0.080 |\n| 35 - 39 | $0.090 | $0.090 |\n| 40 - 44 | $0.130 | $0.130 |\n| 45 - 49 | $0.205 | $0.205 |\n| 50 - 54 | $0.324 | $0.324 |\n| 55 - 59 | $0.503 | $0.503 |\n| 60 - 64 | $0.734 | $0.734 |\n| 65 - 69 | $1.274 | $1.274 |\n| 70 - 99 | $2.060 | $2.060 |\n| Children: | $0.240 | $0.240 |\n| Optional AD&D: Employee | $0.029 | $0.029 |\n| Optional AD&D: Family | $0.029 | $0.029 |\n\n### Rank 3 | Pages: [, 8, ,,  , 9, ]\n# XII. Commission\n\nAll bidders should include the following commission levels in their quotes:\n\n-Medical - Flat 3.5% or $43 PEPM if it is a 'Service Fee'\n\n-Dental - Flat 10%\n\n-Voluntary Vision - Flat 10%\n\n-Basic Life / AD&D- Flat 10%\n\n-Voluntary Life / AD&D - Flat 15%\n\n-LTD - Flat 10%\n\n## Output JSON Template\n{\n    \"attribute_name\": \"AD&D Rates - Family\",\n    \"value\": \"\",\n    \"page_citation\": \"\",\n    \"evidence\": \"\"\n}\n\n## Output Format\nReturn a JSON with the following information:\n\n**THIS IS AN EXAMPLE:**\n\n```\n{\n    \"attribute_name\": \"Benefit Maximum\",\n    \"value\": \"$50,000\",\n    \"page_citation\": \"page: x\",\n    \"evidence\": \"The Benefit Maximum is $50,000\"\n}\n```\n\n- Use concise values (numbers, dates, names) wherever possible.\n- In the page_citation, quote the page number the answer was found in.\n- In the evidence, quote the minimal supporting text.\n- When a JSON template is provided above, populate it with the extracted values; otherwise follow the example structure.\n- Use `null` when the value cannot be found in the document.\n- If \"value\" is null, \"page_citation\", \"evidence\" will both be null as well\n- Do not speculate, summarize unrelated material, or invent details that are not explicitly stated.\n",
+    "model_response": "{\n    \"attribute_name\": \"AD&D Rates - Family\",\n    \"value\": \"$0.029\",\n    \"page_citation\": \"page: 7\",\n    \"evidence\": \"Optional AD&D: Family | $0.029\"\n}"
+  }
+}

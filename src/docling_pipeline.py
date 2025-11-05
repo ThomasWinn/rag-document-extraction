@@ -31,6 +31,7 @@ from langchain_core.documents import Document as LCDocument
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import CrossEncoder, SentenceTransformer
 
+from local_llm_client import generate_chat_completion
 
 logger = logging.getLogger(__name__)
 
@@ -908,7 +909,7 @@ class DoclingIngestionPipeline:
                 captions.append(text.strip())
         return " ".join(captions).strip()
 
-def main() -> Dict[str, Any]:
+def main() -> Tuple[Dict[str, Any], Path, Dict[str, Any], Path]:
     """
     Update the variables below to configure ingestion without touching pipeline internals.
     """
@@ -948,18 +949,19 @@ def main() -> Dict[str, Any]:
     #     batch_size=256,
     # )
 
-    output = {}
+    output: Dict[str, Any] = {}
+    parsed_output: Dict[str, Any] = {}
 
     attributes_list = [
         "Guaranteed Issue - Employee", # $100,000
-        "Guaranteed Issue - Spouse",   # $5,000
+        "Guaranteed Issue - Spouse",   # $50,000
         "Benefit Maximum - Employee",  # 5 x Annual Earnings in $10,000 Increments up to $300,000 -> 5x to $300,000
         "Benefit Duration - Employee", # null
         "Benefit Schedule - Employee", # 10k increments to 300,000
-        "Benefit Maximum - AD&D",      # null
-        "Benefit Duration - AD&D",     # null
-        "Benefit Schedule - AD&D",     # null
-        "Elimination Period",          # null - found in LTD - might be a challenge for RAG as that will be the closest match
+        "Benefit Maximum - AD&D",      # null X
+        "Benefit Duration - AD&D",     # null 
+        "Benefit Schedule - AD&D",     # null X
+        "Elimination Period",          # null - (found in LTD - might be a challenge for RAG as that will be the closest match)
         "Broker Commission",           # Flat 15%
         # Rates
         "AD&D Rates - Employee",       # 0.029
@@ -980,8 +982,18 @@ def main() -> Dict[str, Any]:
     top_k = 5
     top_n = 3  # Number of top chunks to use
 
+    system_prompt_path = root / "prompts" / "system.txt"
+    system_prompt = (
+        system_prompt_path.read_text(encoding="utf-8").strip()
+        if system_prompt_path.exists()
+        else None
+    )
+
     template_path = root / "prompts" / f"{product_type_name}.txt"
     template_text = template_path.read_text(encoding="utf-8")
+
+    llm_temperature = 0.2
+    llm_max_tokens = 1024
 
     for idx, attribute in enumerate(attributes_list):
 
@@ -1024,19 +1036,63 @@ def main() -> Dict[str, Any]:
             .replace("{{json_template}}", json_template_str)
         )
 
+        model_response: Optional[str] = None
+        try:
+            model_response = generate_chat_completion(
+                prompt=prompt_text,
+                system_prompt=system_prompt,
+                temperature=llm_temperature,
+                max_tokens=llm_max_tokens,
+            )
+        except Exception as exc:  # pragma: no cover - network errors
+            logger.warning(
+                "LM Studio request failed for attribute '%s': %s",
+                attribute,
+                exc,
+            )
+
+        parsed_payload: Dict[str, Any] = {}
+        if model_response:
+            try:
+                parsed_candidate = json.loads(model_response)
+                if isinstance(parsed_candidate, dict):
+                    parsed_payload = parsed_candidate
+                else:
+                    parsed_payload = {"value": parsed_candidate}
+            except json.JSONDecodeError as exc:
+                parsed_payload = {"parse_error": str(exc)}
+                logger.warning(
+                    "Failed to parse model response for attribute '%s': %s",
+                    attribute,
+                    exc,
+                )
+        parsed_output[attribute] = parsed_payload
+
         output[attribute] = {
             "attribute_index": idx,
             "query": attribute_query,
-            "retrieved_chunks": reranked_results,
+            # "retrieved_chunks": reranked_results,
             "top_chunks": top_chunks,
             "context": context_text,
-            "json_template": attribute_json,
+            # "json_template": attribute_json,
             "prompt": prompt_text,
-            "model_response": None,  # placeholder for future LLM call
+            "model_response": model_response,
         }
 
-    return output
+    outputs_dir = root / "outputs"
+    outputs_dir.mkdir(parents=True, exist_ok=True)
+
+    output_json = json.dumps(output, ensure_ascii=False, indent=2)
+    output_path = outputs_dir / f"{doc_id}_attributes.json"
+    output_path.write_text(output_json, encoding="utf-8")
+
+    parsed_output_json = json.dumps(parsed_output, ensure_ascii=False, indent=2)
+    parsed_output_path = outputs_dir / f"{doc_id}_attributes_parsed.json"
+    parsed_output_path.write_text(parsed_output_json, encoding="utf-8")
+
+    return output, output_path, parsed_output, parsed_output_path
 
 if __name__ == "__main__":
-    results = main()
-    print(f"Prepared prompts for {len(results)} attributes.")
+    results_dict, json_path, parsed_results, parsed_json_path = main()
+    print(f"Wrote JSON output to {json_path}")
+    print(f"Wrote parsed model responses to {parsed_json_path}")

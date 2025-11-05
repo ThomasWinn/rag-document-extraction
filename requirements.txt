@@ -5,3 +5,4 @@ sentence-transformers
 langchain
 langchain-text-splitters
 tiktoken
+requests
