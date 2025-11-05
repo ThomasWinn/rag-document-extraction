@@ -46,3 +46,7 @@ You split the RFP into chunks (paragraphs, sections, etc.), store them in a vect
 - ⚠️ Context is limited to what’s retrieved — if the right text isn’t pulled, the model can’t know it.
 
 👉 **Best for:** Large, structured RFPs or collections of proposals — especially if you’ll be asking many different questions (pricing, benefits, eligibility, etc.) across many docs.
+
+
+## TODO:
+Make predictions over a loops and build inforce json
