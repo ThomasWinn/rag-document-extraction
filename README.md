@@ -47,6 +47,14 @@ You split the RFP into chunks (paragraphs, sections, etc.), store them in a vect
 
 👉 **Best for:** Large, structured RFPs or collections of proposals — especially if you’ll be asking many different questions (pricing, benefits, eligibility, etc.) across many docs.
 
+## Latest Run Summary
+- Targeted 12 in-force attributes using the Docling-driven hierarchical chunking pipeline plus Qwen2.5-32B-Instruct for generation.
+- Only 2 of 12 attributes were populated correctly; 10 returned empty or unusable results, indicating the current retrieval windows miss key evidence.
+- Chunking approach today: Docling preserves layout → sections aggregated hierarchically → RecursiveCharacter splitter (512/40) → Chroma + bge-large embeddings → reranked with bge-reranker.
+- The mix of small, metadata-rich chunks appears to fragment key benefit tables; evidence often lands adjacent to questions, so retrieval fails even with reranking.
 
-## TODO:
-Make predictions over a loops and build inforce json
+## Next Steps on Chunking
+- Revisit chunk construction: experiment with product-level slabs (e.g., group all LTD content into a single chunk) so RAG has broader context per attribute query.
+- Compare hierarchical spans vs product-level chunks for precision/recall on attribute extraction before adding more heuristics.
+- Investigate hybrid retrieval (per-product chunk + smaller supporting snippets) instead of relying solely on fine-grained hierarchical chunks.
+- Hold off on “full document in prompt” strategy until we benchmark a refined chunking approach; current experience reinforces that better chunking beats 30-page prompts for attribute extraction.
