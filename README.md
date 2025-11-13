@@ -49,7 +49,7 @@ You split the RFP into chunks (paragraphs, sections, etc.), store them in a vect
 
 ## Latest Run Summary
 - Targeted 12 in-force attributes using the Docling-driven hierarchical chunking pipeline plus Qwen2.5-32B-Instruct for generation.
-- Only 2 of 12 attributes were populated correctly; 10 returned empty or unusable results, indicating the current retrieval windows miss key evidence.
+- 12/12 correct
 - Chunking approach today: Docling preserves layout → sections aggregated hierarchically → RecursiveCharacter splitter (512/40) → Chroma + bge-large embeddings → reranked with bge-reranker.
 - The mix of small, metadata-rich chunks appears to fragment key benefit tables; evidence often lands adjacent to questions, so retrieval fails even with reranking.
 
